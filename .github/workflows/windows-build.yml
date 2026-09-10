@@ -11,8 +11,10 @@ jobs:
       - name: Checkout v26.2
         uses: actions/checkout@v4
         with:
-          ref: v26.2
+          repository: linussztuka2011/cubiomes-viewer
+          ref: refs/tags/v26.2
           submodules: recursive
+          fetch-depth: 0
 
       - name: Install Qt 5.15.2
         uses: jurplel/install-qt-action@v3
